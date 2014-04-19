@@ -10,13 +10,14 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "button": {"#": "button"}
             }
         },
-        "button": {
+        "matteButton": {
             "prototype": "matte/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
+                "element": {"#": "matteButton"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -27,10 +28,10 @@
                 "type": "button"
             }
         },
-        "buttonDiv": {
+        "matteButtonDiv": {
             "prototype": "matte/ui/button.reel",
             "properties": {
-                "element": {"#": "buttonDiv"},
+                "element": {"#": "matteButtonDiv"},
                 "enabled": true,
                 "label": "Button"
             }
@@ -40,8 +41,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="button"></button>
-        <button data-montage-id="buttonDiv"></button>
+        <button data-montage-id="matteButton"></button>
+        <div data-montage-id="matteButtonDiv"></div>
+        <button data-montage-id="button"></div>
     </div>
 </body>
 </html>
