@@ -13,5 +13,19 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    
+    enterDocument: {
+        value: function(firstTime) {
+            if (firstTime) {
+                this.element.addEventListener("dragstart", this, true);
+            }
+        }
+    },
+    
+    handleDragstart: {
+        value: function(event) {
+            console.log("target", event.target);
+        }
     }
 });
