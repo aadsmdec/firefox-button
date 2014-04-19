@@ -23,7 +23,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     
-    handleDragstart: {
+    captureDragstart: {
         value: function(event) {
             console.log("target", event.target);
         }
